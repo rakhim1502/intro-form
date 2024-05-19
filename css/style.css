@@ -40,7 +40,10 @@ img {
   height: auto;
   max-width: 100%;
 }
-
+*:focus{
+  outline: 2px dotted var(--purple);
+  outline-offset: 3px;
+}
 .container {
   width: 100%;
   max-width: 1192px;
@@ -110,4 +113,61 @@ img {
   text-align: center;
   font-size: 19px;
   line-height: auto;
+}
+.signup-form {
+  width: 100%;
+  max-width: 570px;
+  margin-left: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 55px 60px 40px;
+}
+.signup-form-heading {
+  margin-top: 0;
+  margin-bottom: 65px;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 600;
+}
+.signup-form-fields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+.signup-form-field {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  color: #555;
+  border: 0;
+  border-bottom: 1px solid #555;
+}
+.signup-form-field:focus{
+  border-bottom: #000;
+  color: #000;
+  font-weight: 600;
+}
+.signup-form-field:not(:last-child){
+  margin-bottom: 20px;
+}
+.signup-form-submit {
+  width: 100%;
+  display: block;
+  border: 0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--purple);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.signup-form-notice {
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}
+.signup-form-notice-link {
+  color: var(--red);
+  font-weight: 500;
 }
